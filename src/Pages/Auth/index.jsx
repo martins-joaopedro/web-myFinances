@@ -56,16 +56,15 @@ const AuthContainer = styled.div`
 `
 
 const InputCard = styled.div`
-    min-width: 90%;
-    height: 400px;
+    width: clamp(300px, 60vw, 600px);
+    height: clamp(300px, 45vh, 450px);
     background-color: #ffffff45;
-    border-radius: 25px; 
+    border-radius: 20px; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     border: 1px solid #c4c4c453;
-    position: absolute;
     box-shadow: 5px 5px 2rem #33333352;
 `
 
