@@ -1,25 +1,18 @@
+import styled from 'styled-components'
+import { AuthPage } from './Pages/Auth'
 
-import axios from "axios";
-
-function App() {
-
-  //const [data, setData] = useState()
-
-  const api = axios.create({
-    baseURL: "https://api-node-iult.onrender.com" 
-  })
-  
-  const fetchData = () => {
-    return api.get("/extenses").then((a) => console.log(a))
-
-  }
+export const App = () => {
 
   return (
-    <div>
-      <button onClick={() => fetchData()}></button>
-      
-    </div>
+   <AppContainer>
+      <AuthPage></AuthPage>
+   </AppContainer>
   )
 }
 
-export default App
+
+const AppContainer = styled.div`
+  padding: 0;
+  margin: 0;
+
+`
